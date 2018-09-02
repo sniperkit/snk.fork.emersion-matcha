@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package matcha
 
 import (
@@ -586,7 +591,7 @@ func New(e *echo.Echo, dir string) error {
 
 				repoPath := ""
 				if len(reqParts[:i]) > 0 {
-					repoPath = "/"+path.Join(reqParts[:i]...)
+					repoPath = "/" + path.Join(reqParts[:i]...)
 				}
 
 				req.URL.Path = "/" + path.Join(reqParts[i:]...)
@@ -626,7 +631,7 @@ func New(e *echo.Echo, dir string) error {
 		return s.commit(c, c.Param("hash"))
 	})
 
-	e.Static("/static", publicDir + "/node_modules")
+	e.Static("/static", publicDir+"/node_modules")
 
 	return nil
 }

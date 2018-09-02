@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
@@ -8,7 +13,7 @@ import (
 	"github.com/labstack/echo/middleware"
 	"github.com/labstack/gommon/log"
 
-	"github.com/emersion/matcha"
+	"github.com/sniperkit/snk.fork.emersion-matcha"
 )
 
 func main() {
